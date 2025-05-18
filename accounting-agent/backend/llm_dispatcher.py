@@ -8,11 +8,13 @@ from agents.report_agent import handle_report_command
 from agents.payment_agent import handle_payment_command
 from rag.vector_store import query_similar
 from agents.query_agent import handle_largest_invoice_query
-from agents.payment_agent import extract_name
 
 load_dotenv()
 OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
 OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
+
+def clean_client_name(raw_name: str) -> str:
+    return raw_name.lstrip("למבשכאת")
 
 def handle_command_via_llm(user_input: str) -> dict:
     if not OPENROUTER_API_KEY:
@@ -21,7 +23,6 @@ def handle_command_via_llm(user_input: str) -> dict:
             "response": "לא נמצא מפתח API ל-OpenRouter. בדוק את קובץ .env."
         }
 
-    # הפרומפט הבסיסי למודל
     base_system_prompt = """
     אתה עוזר חכם בתחום הנהלת החשבונות.
     מטרתך היא להבין פקודות חופשיות בעברית ולהחזיר מבנה JSON בלבד, ללא הסברים, תגובות או טקסט נוסף.
@@ -66,12 +67,9 @@ def handle_command_via_llm(user_input: str) -> dict:
 - "הכסף מדנה הגיע" → mark_as_paid, client=דנה
 """
 
-    # שלב RAG: שליפת הקשר דומה מהמערכת
     retrieved = query_similar(user_input, n_results=3)
     context_snippets = retrieved.get("documents", [[]])[0]
     rag_context = "\n\n".join(context_snippets)
-
-    # שילוב הקשר לתוך הפרומפט
     enriched_prompt = base_system_prompt + "\n\nמידע נוסף להקשר:\n" + rag_context
 
     headers = {
@@ -95,6 +93,8 @@ def handle_command_via_llm(user_input: str) -> dict:
             reply = response.json()
             raw_output = reply["choices"][0]["message"]["content"].strip()
 
+            print("🧠 LLM raw output:", raw_output)
+
             with open("debug_llm_output.txt", "a", encoding="utf-8") as f:
                 f.write(f"\n=== USER: {user_input} ===\n{raw_output}\n")
 
@@ -117,22 +117,31 @@ def handle_command_via_llm(user_input: str) -> dict:
             "response": f"שגיאה כללית: {str(e)}"
         }
 
-    # ניתוב לפי intent
     intent = data.get("intent")
+    print("📌 intent:", intent)
 
     if intent == "issue_invoice":
-        return handle_invoice_command(user_input)
+        client = data.get("client")
+        amount = data.get("amount")
+        print("📤 extracted client & amount:", client, amount)
+        if client:
+            client = clean_client_name(client)
+        return handle_invoice_command(client_name=client, amount=amount, user_input=user_input)
+
     elif intent and intent.startswith("report_"):
         return handle_report_command(user_input)
+
     elif intent in ["mark_as_paid", "reminder_debt", "debt_status"]:
         return handle_payment_command(
             client=data.get("client"),
             amount=data.get("amount"),
             intent=intent
         )
+
     elif intent == "query_largest_invoice":
-        client = data.get("client") or extract_name(user_input)
+        client = data.get("client")
         return handle_largest_invoice_query(client)
+
     else:
         return {
             "intent": "unknown",

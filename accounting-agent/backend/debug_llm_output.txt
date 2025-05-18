@@ -1,453 +1,401 @@
 
-=== USER: סמן שדני שילם ===
-{
-  "intent": "mark_as_paid",
-  "client": "שדני",
-  "amount": null
-}
-
-=== USER: סמן שדני שילם ===
-{
-  "intent": "mark_as_paid",
-  "client": "שדני",
-  "amount": null
-}
-
-=== USER: סמן שדני שילם ===
-{
-  "intent": "mark_as_paid",
-  "client": "דני",
-  "amount": null
-}
-
-=== USER: סמן שדני שילם ===
-{
-  "intent": "mark_as_paid",
-  "client": "שדני",
-  "amount": null
-}
-
-=== USER: סמן שדני שילם ===
-{
-  "intent": "mark_as_paid",
-  "client": "שדני",
-  "amount": null
-}
-
-=== USER: סמן שחיים שילם ===
-{
-  "intent": "mark_as_paid",
-  "client": "שחיים",
-  "amount": null
-}
-
-=== USER: מצא את כל החייבים ===
-{
-  "intent": "reminder_debt",
-  "client": null,
-  "amount": null
-}
-
-=== USER: מצא את כל בעלי החוב ===
-{
-  "intent": "debt_status",
-  "client": null,
-  "amount": null
-}
-
-=== USER: יבא את מי שחייב ===
-{
-  "intent": "reminder_debt",
-  "client": null,
-  "amount": null
-}
-
-=== USER: מי חייב ===
-{"intent": "debt_status", "client": null, "amount": null}
-
-=== USER: תפיק לי חשבונית על 359 על דוד  ===
-{
-  "intent": "issue_invoice",
-  "client": "דוד",
-  "amount": 359
-}
-
-=== USER: כמה הוצאתי באפריל? ===
-{
-  "intent": "report_expense",
-  "client": null,
-  "amount": null
-}
-
-=== USER: האם הייתי ברווח או הפסד במאי? ===
-{"intent": "report_profit", "client": null, "amount": null}
-
-=== USER: מי עוד לא שילם? ===
-{"intent": "debt_status", "client": null, "amount": null}
-
-=== USER: אני צריך לגבות מדוד בקרוב ===
-{"intent": "reminder_debt", "client": "דוד", "amount": null}
-
-=== USER: תעדכן שדני סיים לשלם ===
-{"intent": "mark_as_paid", "client": "דני", "amount": null}
-
-=== USER: תעדכן שדני סיים לשלם ===
-{"intent": "mark_as_paid", "client": "דני", "amount": null}
-
-=== USER: תפיק לי חשבונית על 500 ש"ח לדני ===
-{
-  "intent": "issue_invoice",
-  "client": "דני",
-  "amount": 500
-}
-
-=== USER: תפיק לי עוד חשבונית על 600 ש"ח לדני ===
-{
-  "intent": "issue_invoice",
-  "client": "דני",
-  "amount": 600
-}
-
-=== USER: תעדכן שדני סיים לשלם ===
-{"intent": "mark_as_paid", "client": "דני", "amount": null}
-
-=== USER: תעדכן דני שילם ===
-{"intent": "mark_as_paid", "client": "דני", "amount": null}
-
-=== USER: מי עוד לא שילם? ===
-{
-  "intent": "debt_status",
-  "client": null,
-  "amount": null
-}
-
-=== USER: תזכיר לי לגבות מדוד ===
-{"intent": "reminder_debt", "client": "דוד", "amount": null}
-
-=== USER: סמן שדני שילם ===
-{
-  "intent": "mark_as_paid",
-  "client": "דני",
-  "amount": null
-}
-
-=== USER: כמה הרווחתי באפריל? ===
-{
-  "intent": "report_profit",
-  "client": null,
-  "amount": null
-}
-
-=== USER: כמה דני חייב לי? ===
-{"intent": "debt_status", "client": "דני", "amount": null}
-
-=== USER: כמה דני חייב לי? ===
-{"intent": "debt_status", "client": "דני", "amount": null}
-
-=== USER: כמה דני חייב לי? ===
-{"intent": "debt_status", "client": "דני", "amount": null}
-
-=== USER: כמה דני חייב לי? ===
-{"intent": "debt_status", "client": "דני", "amount": null}
-
-=== USER: מי עוד לא שילם ===
-{
-  "intent": "debt_status",
-  "client": null,
-  "amount": null
-}
-
-=== USER: תזכיר לי לגבות מדוד ===
-{"intent": "reminder_debt", "client": "דוד", "amount": null}
-
-=== USER: סמן שדני שילם ===
-{
-  "intent": "mark_as_paid",
-  "client": "דני",
-  "amount": null
-}
-
-=== USER: מי עוד לא שילם? ===
-{"intent": "debt_status", "client": null, "amount": null}
-
-=== USER: מי עוד לא שילם? ===
-{
-  "intent": "debt_status",
-  "client": null,
-  "amount": null
-}
-
-=== USER: תפיק לי חשבונית על 120 ליוסי ===
-{
-  "intent": "issue_invoice",
-  "client": "יוסי",
-  "amount": 120
-}
-
-=== USER: כמה הרווחתי באפריל? ===
-{
-  "intent": "report_profit",
-  "client": null,
-  "amount": null
-}
-
-=== USER: מי עוד לא שילם? ===
-{"intent": "debt_status", "client": null, "amount": null}
-
-=== USER: תפיק לי חשבונית על 120 ליוסי ===
-{
-  "intent": "issue_invoice",
-  "client": "יוסי",
-  "amount": 120
-}
-
-=== USER: כמה הרווחתי באפריל? ===
-{"intent": "report_profit", "client": null, "amount": null}
-
-=== USER: יוסף חייב 2220 שקל ===
-{"intent": "reminder_debt", "client": "יוסף", "amount": 2220}
-
-=== USER: מה החשבונית הכי גבוהה של יוסי? ===
+=== USER: קניתי מרוני ב-100 ש"ח  ===
 {
   "intent": "unknown",
-  "client": "יוסי",
+  "client": null,
   "amount": null
 }
 
-=== USER: מה החשבונית הכי גבוהה של יוסי? ===
+=== USER: קניתי מרוני ב-100 שח  ===
 {
-  "intent": "report_expense",
-  "client": "יוסי",
-  "amount": 450
+  "intent": "unknown",
+  "client": null,
+  "amount": null
 }
 
-=== USER: מה החשבונית הכי גבוהה של יוסי? ===
-{
-  "intent": "query_largest_invoice",
-  "client": "יוסי",
-  "amount": 450
-}
-
-=== USER: הפק חשבונית על 200 שח ליוסי ===
+=== USER: קניתי מרוני במאה שקל  ===
 {
   "intent": "issue_invoice",
-  "client": "יוסי",
-  "amount": 200
+  "client": null,
+  "amount": 100
 }
 
-=== USER: תוציא לי חשבונית על 850 לדנה ===
-{
-  "intent": "issue_invoice",
-  "client": "דנה",
-  "amount": 850
-}
-
-=== USER: הפקתי ללקוח רוני חשבונית על 500 ===
+=== USER: קניתי מ-רוני במאה שקל  ===
 {
   "intent": "issue_invoice",
   "client": "רוני",
+  "amount": 100
+}
+
+=== USER: קניתי משהו ב-100 ש"ח מרוני ===
+{
+  "intent": "issue_invoice",
+  "client": "מרוני",
+  "amount": 100
+}
+
+=== USER: קניתי משהו ב-100 ש"ח מרוני ===
+{
+  "intent": "issue_invoice",
+  "client": "מרוני",
+  "amount": 100
+}
+
+=== USER: קניתי ב-100 ש"ח מרוני ===
+{
+  "intent": "issue_invoice",
+  "client": "מרוני",
+  "amount": 100
+}
+
+=== USER: קניתי מרוני 100 ===
+{
+  "intent": "unknown",
+  "client": null,
+  "amount": null
+}
+
+=== USER: הפק חשבונית יונתן על סך 100 ===
+{
+  "intent": "issue_invoice",
+  "client": "ישראל",
+  "amount": 100
+}
+
+=== USER: ??? ??????? ?? 123 ????? ===
+{
+  "intent": "unknown",
+  "client": null,
+  "amount": null
+}
+
+=== USER: הפק חשבונית על 123 לרוני ===
+{
+  "intent": "issue_invoice",
+  "client": "רוני",
+  "amount": 123
+}
+
+=== USER: הפק חשבונית על 123 לרוני ===
+{
+  "intent": "issue_invoice",
+  "client": "רוני",
+  "amount": 123
+}
+
+=== USER: הפק חשבונית  יונתן על סך 100 ===
+{
+  "intent": "issue_invoice",
+  "client": "יונתן",
+  "amount": 100
+}
+
+=== USER: הפק חשבונית על 123 לרוני ===
+{
+  "intent": "issue_invoice",
+  "client": "רוני",
+  "amount": 123
+}
+
+=== USER: הפק חשבונית על 123 לרוני ===
+{
+  "intent": "issue_invoice",
+  "client": "רוני",
+  "amount": 123
+}
+
+=== USER: הפק חשבונית על 123 לרוני ===
+{
+  "intent": "issue_invoice",
+  "client": "רוני",
+  "amount": 123
+}
+
+=== USER: תפיק חשבונית על 200 ש"ח לדני ===
+{
+  "intent": "issue_invoice",
+  "client": "דני",
+  "amount": 200
+}
+
+=== USER: ??? ??????? ?? 123 ????? ===
+{
+  "intent": "unknown",
+  "client": null,
+  "amount": null
+}
+
+=== USER: ??? ??????? ?? 123 ????? ===
+{
+  "intent": "unknown",
+  "client": null,
+  "amount": null
+}
+
+=== USER: הפק חשבונית על 123 לרוני ===
+{
+  "intent": "issue_invoice",
+  "client": "רוני",
+  "amount": 123
+}
+
+=== USER: ??? ??????? ?? 123 ????? ===
+{
+  "intent": "unknown",
+  "client": null,
+  "amount": null
+}
+
+=== USER: הפק חשבונית על 123 לרוני ===
+{
+  "intent": "issue_invoice",
+  "client": "רוני",
+  "amount": 123
+}
+
+=== USER: ??? ??????? ?? 123 ????? ===
+{
+  "intent": "unknown",
+  "client": null,
+  "amount": null
+}
+
+=== USER: ??? ??????? ?? 123 ????? ===
+{
+  "intent": "unknown",
+  "client": null,
+  "amount": null
+}
+
+=== USER: הפק חשבונית על 123 לרוני ===
+{
+  "intent": "issue_invoice",
+  "client": "רוני",
+  "amount": 123
+}
+
+=== USER: ??? ??????? ?? 123 ????? ===
+{
+  "intent": "unknown",
+  "client": null,
+  "amount": null
+}
+
+=== USER: הפק חשבונית על 123 לרוני ===
+{
+  "intent": "issue_invoice",
+  "client": "רוני",
+  "amount": 123
+}
+
+=== USER: הפק חשבונית על 123 לרוני ===
+{
+  "intent": "issue_invoice",
+  "client": "רוני",
+  "amount": 123
+}
+
+=== USER: הפק חשבונית על 123 לרוני ===
+{
+  "intent": "issue_invoice",
+  "client": "רוני",
+  "amount": 123
+}
+
+=== USER: הפק חשבונית על 123 לאבי ===
+{
+  "intent": "issue_invoice",
+  "client": "אבי",
+  "amount": 123
+}
+
+=== USER: הפק חשבונית על 123 ל-אבי ===
+{
+  "intent": "issue_invoice",
+  "client": "אבי",
+  "amount": 123
+}
+
+=== USER: הפק חשבונית על 123 ל'אבי' ===
+{
+  "intent": "issue_invoice",
+  "client": "אבי",
+  "amount": 123
+}
+
+=== USER: הפק חשבונית על 123 יוסף' ===
+{
+  "intent": "issue_invoice",
+  "client": "יוסף",
+  "amount": 123
+}
+
+=== USER: הפק חשבונית על 123 לרוני ===
+{
+  "intent": "issue_invoice",
+  "client": "רוני",
+  "amount": 123
+}
+
+=== USER: הפק חשבונית על 500 ש"ח לדני ===
+{
+  "intent": "issue_invoice",
+  "client": "דני",
   "amount": 500
 }
 
-=== USER: כמה הוצאתי באפריל? ===
+=== USER: הפק חשבונית על 3999 ש"ח לאפריים ===
 {
-  "intent": "report_expense",
-  "client": null,
+  "intent": "issue_invoice",
+  "client": "אפריים",
+  "amount": 3999
+}
+
+=== USER: כמה יאיר חייב? ===
+{
+  "intent": "debt_status",
+  "client": "יאיר",
   "amount": null
 }
 
-=== USER: מה היו ההכנסות שלי במאי? ===
+=== USER: כמה דני חייב ===
 {
-  "intent": "report_income",
-  "client": null,
+  "intent": "debt_status",
+  "client": "דני",
   "amount": null
 }
 
-=== USER: האם הייתי ברווח בחודש מרץ? ===
+=== USER: הפק חשבונית על 700 ש"ח לדני ===
+{
+  "intent": "issue_invoice",
+  "client": "דני",
+  "amount": 700
+}
+
+=== USER: כמה דני חייב? ===
+{
+  "intent": "debt_status",
+  "client": "דני",
+  "amount": null
+}
+
+=== USER: מה היתרה של דני ===
+{
+  "intent": "debt_status",
+  "client": "דני",
+  "amount": null
+}
+
+=== USER: מה היתרה של יוסי ===
+{
+  "intent": "debt_status",
+  "client": "יוסי",
+  "amount": null
+}
+
+=== USER: יוסי חייב 100 ש"ח ===
+{
+  "intent": "debt_status",
+  "client": "יוסי",
+  "amount": 100
+}
+
+=== USER: כמה יוסי חייב ===
+{
+  "intent": "debt_status",
+  "client": "יוסי",
+  "amount": null
+}
+
+=== USER: צור חשבונית על 300 ליוסי ===
+{
+  "intent": "issue_invoice",
+  "client": "יוסי",
+  "amount": 300
+}
+
+=== USER: מה היתרה של יוסי? ===
+{
+  "intent": "debt_status",
+  "client": "יוסי",
+  "amount": null
+}
+
+=== USER: הוסף לקוח חדש בשם חגי ===
+{
+  "intent": "unknown",
+  "client": "חגי",
+  "amount": null
+}
+
+=== USER: הפק חשבונית ע"ש דני על 590 ש"ח ===
+{
+  "intent": "issue_invoice",
+  "client": "דני",
+  "amount": 590
+}
+
+=== USER: כמה דני? ===
+{
+  "intent": "unknown"
+}
+
+=== USER: כמה דני צריך לשלם ===
+{
+  "intent": "debt_status",
+  "client": "דני",
+  "amount": null
+}
+
+=== USER: מי חייב יותר דני או יוסי? ===
+{
+  "intent": "unknown"
+}
+
+=== USER: כמה הרווחתי החודש? ===
 {
   "intent": "report_profit",
   "client": null,
   "amount": null
 }
 
-=== USER: מי עוד לא שילם? ===
+=== USER: כמה הפסדתי החודש ===
 {
-  "intent": "reminder_debt",
+  "intent": "report_profit"
+}
+
+=== USER: כמה הרווחתי חודש קודם? ===
+{
+  "intent": "report_profit"
+}
+
+=== USER: כמה הרווחתי בחודש 4 ===
+{
+  "intent": "report_profit"
+}
+
+=== USER: כמה הרווחתי בחודש מרץ ===
+{
+  "intent": "report_profit"
+}
+
+=== USER: כמה הרווחתי בחודש מאי ===
+{
+  "intent": "report_profit",
   "client": null,
   "amount": null
 }
 
-=== USER: מה החוב של רועי? ===
+=== USER: כמה הרווחתי בחודש אפריל ===
+{
+  "intent": "report_profit",
+  "client": null,
+  "amount": null
+}
+
+=== USER: כמה יוסי חייב ===
 {
   "intent": "debt_status",
-  "client": "רועי",
-  "amount": null
-}
-
-=== USER: צריך להזכיר לדני לשלם ===
-{
-  "intent": "reminder_debt",
-  "client": "דני",
-  "amount": null
-}
-
-=== USER: תבדוק אם יעל חייבת כסף ===
-{
-  "intent": "debt_status",
-  "client": "יעל",
-  "amount": null
-}
-
-=== USER: תעדכן שדני סיים לשלם ===
-{
-  "intent": "mark_as_paid",
-  "client": "שדני",
-  "amount": null
-}
-
-=== USER: תעדכן דני סיים לשלם ===
-{
-  "intent": "mark_as_paid",
-  "client": "דני",
-  "amount": null
-}
-
-=== USER: דנה העבירה את הכסף ===
-{
-  "intent": "unknown",
-  "client": null,
-  "amount": null
-}
-
-=== USER: סמן את התשלום של דוד כשולם ===
-{
-  "intent": "mark_as_paid",
-  "client": "דוד",
-  "amount": null
-}
-
-=== USER: דנה העבירה את הכסף ===
-{
-  "intent": "unknown",
-  "client": null,
-  "amount": null
-}
-
-=== USER:  דע לך דנה העבירה את הכסף ===
-{
-  "intent": "unknown",
-  "client": null,
-  "amount": null
-}
-
-=== USER:  מעדכן שדנה העבירה את הכסף ===
-{
-  "intent": "unknown",
-  "client": null,
-  "amount": null
-}
-
-=== USER: מעדכן דנה העבירה תשלום ===
-{
-  "intent": "mark_as_paid",
-  "client": "דנה",
-  "amount": null
-}
-
-=== USER: מה החשבונית הכי גבוהה של יוסי? ===
-{
-  "intent": "issue_invoice",
   "client": "יוסי",
-  "amount": null
-}
-
-=== USER: תביא לי את החשבונית הכי גבוהה של יוסי ===
-{
-  "intent": "issue_invoice",
-  "client": "יוסי",
-  "amount": null
-}
-
-=== USER: החשבונית הכי גבוהה של יוסי ===
-{
-  "intent": "issue_invoice",
-  "client": "יוסי",
-  "amount": null
-}
-
-=== USER: לקוח: יוסי. מה החשבונית הכי גבוהה של יוסי ===
-{
-  "intent": "issue_invoice",
-  "client": "יוסי",
-  "amount": null
-}
-
-=== USER: שם: יוסי , מה החשבונית הכי גבוהה ===
-{
-  "intent": "issue_invoice",
-  "client": "יחיאל",
-  "amount": null
-}
-
-=== USER: איזו חשבונית הכי יקרה של רוני? ===
-{
-  "intent": "unknown",
-  "client": null,
-  "amount": null
-}
-
-=== USER:  מעדכן דנה העבירה את הכסף ===
-{
-  "intent": "unknown",
-  "client": null,
-  "amount": null
-}
-
-=== USER: דנה העבירה כסף ===
-{
-  "intent": "unknown",
-  "client": "דנה",
-  "amount": null
-}
-
-=== USER: דנה העבירה כסף ===
-{
-  "intent": "unknown",
-  "client": "דנה",
-  "amount": null
-}
-
-=== USER: דנה העבירה כסף ===
-{
-  "intent": "unknown",
-  "client": "דנה",
-  "amount": null
-}
-
-=== USER: דנה העבירה את הכסף ===
-{
-  "intent": "unknown",
-  "client": null,
-  "amount": null
-}
-
-=== USER: דנה העבירה את הכסף ===
-{
-  "intent": "unknown",
-  "client": null,
-  "amount": null
-}
-
-=== USER: דנה שילמה לי ===
-{
-  "intent": "mark_as_paid",
-  "client": "דנה",
-  "amount": null
-}
-
-=== USER: קיבלתי תשלום מדנה ===
-{
-  "intent": "mark_as_paid",
-  "client": "דנה",
   "amount": null
 }

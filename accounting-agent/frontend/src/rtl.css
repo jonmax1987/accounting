@@ -1,0 +1,180 @@
+/* תמיכה בעברית ו-RTL */
+
+/* כיוון טקסט כללי */
+[dir="rtl"] {
+  text-align: right;
+}
+
+[dir="ltr"] {
+  text-align: left;
+}
+
+/* תיקון לרכיבי MUI */
+[dir="rtl"] .MuiTableCell-root {
+  text-align: right;
+}
+
+[dir="rtl"] .MuiInputBase-root {
+  text-align: right;
+}
+
+[dir="rtl"] .MuiFormLabel-root {
+  right: 0;
+  left: auto;
+  transform-origin: top right;
+}
+
+[dir="rtl"] .MuiInputLabel-root {
+  right: 0;
+  left: auto;
+  transform-origin: top right;
+}
+
+[dir="rtl"] .MuiInputAdornment-positionStart {
+  margin-left: 8px;
+  margin-right: 0;
+}
+
+[dir="rtl"] .MuiInputAdornment-positionEnd {
+  margin-right: 8px;
+  margin-left: 0;
+}
+
+[dir="rtl"] .MuiSelect-select {
+  padding-right: 12px;
+  padding-left: 32px;
+}
+
+[dir="rtl"] .MuiSelect-icon {
+  right: auto;
+  left: 7px;
+}
+
+/* תיקון לרכיבי Recharts */
+[dir="rtl"] .recharts-cartesian-axis-tick-value {
+  text-anchor: start;
+}
+
+/* פונטים */
+@font-face {
+  font-family: 'Heebo';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/heebo/v21/NGS6v5_NC0k9P9H0TbFhsqMA.woff2) format('woff2');
+  unicode-range: U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;
+}
+
+@font-face {
+  font-family: 'Heebo';
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/heebo/v21/NGS6v5_NC0k9P9H0TbFhsqMA.woff2) format('woff2');
+  unicode-range: U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;
+}
+
+/* תיקון לגופנים בעברית */
+[dir="rtl"] body,
+[dir="rtl"] h1,
+[dir="rtl"] h2,
+[dir="rtl"] h3,
+[dir="rtl"] h4,
+[dir="rtl"] h5,
+[dir="rtl"] h6,
+[dir="rtl"] p,
+[dir="rtl"] span,
+[dir="rtl"] button,
+[dir="rtl"] input,
+[dir="rtl"] textarea,
+[dir="rtl"] select,
+[dir="rtl"] option,
+[dir="rtl"] label,
+[dir="rtl"] .MuiTypography-root {
+  font-family: 'Heebo', 'Assistant', sans-serif !important;
+}
+
+/* תיקון למרווחים */
+[dir="rtl"] .MuiListItemIcon-root {
+  margin-left: 16px;
+  margin-right: 0;
+}
+
+/* תיקון לאייקונים */
+[dir="rtl"] .MuiSvgIcon-root {
+  transform: scaleX(1);
+}
+
+/* תיקון לכפתורים עם אייקונים */
+[dir="rtl"] .MuiButton-startIcon {
+  margin-left: 8px;
+  margin-right: -4px;
+}
+
+[dir="rtl"] .MuiButton-endIcon {
+  margin-right: 8px;
+  margin-left: -4px;
+}
+
+/* תיקון לתפריטים */
+[dir="rtl"] .MuiMenu-paper {
+  transform-origin: top right;
+}
+
+/* תיקון לדיאלוגים */
+[dir="rtl"] .MuiDialogActions-root {
+  justify-content: flex-start;
+}
+
+/* תיקון לטבלאות */
+[dir="rtl"] .MuiTableCell-paddingCheckbox {
+  padding-right: 0;
+  padding-left: 16px;
+}
+
+/* תיקון לתאריכים */
+[dir="rtl"] .MuiPickersDay-root {
+  direction: rtl;
+}
+
+/* תיקון לגרפים */
+[dir="rtl"] .recharts-legend-item {
+  direction: rtl;
+}
+
+/* תיקון לטפסים */
+[dir="rtl"] .MuiFormControl-root {
+  text-align: right;
+}
+
+/* תיקון לכרטיסים */
+[dir="rtl"] .MuiCardHeader-action {
+  margin-right: auto;
+  margin-left: 0;
+}
+
+/* תיקון לניווט */
+[dir="rtl"] .MuiBreadcrumbs-separator {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+/* תיקון לתיבות סימון */
+[dir="rtl"] .MuiCheckbox-root {
+  padding-right: 9px;
+  padding-left: 9px;
+}
+
+/* תיקון לרדיו */
+[dir="rtl"] .MuiRadio-root {
+  padding-right: 9px;
+  padding-left: 9px;
+}
+
+/* תיקון לסליידרים */
+[dir="rtl"] .MuiSlider-markLabel {
+  transform: translateX(50%);
+}
+
+/* תיקון לסרגל התקדמות */
+[dir="rtl"] .MuiLinearProgress-bar {
+  transform-origin: right;
+}
